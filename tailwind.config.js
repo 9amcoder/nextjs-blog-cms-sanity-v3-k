@@ -7,6 +7,9 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './plugins/**/*.{js,ts,jsx,tsx}',
   ],
+  daisyui: {
+    themes: ['lemonade'],
+  },
   theme: {
     extend: {
       colors: {
@@ -39,5 +42,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 }

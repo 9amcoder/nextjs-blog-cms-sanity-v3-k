@@ -5,6 +5,7 @@ import HeroPost from 'components/HeroPost'
 import MoreStories from 'components/MoreStories'
 import IntroTemplate from 'intro-template'
 import * as demo from 'lib/demo.data'
+import * as myData from 'lib/kalpin.data'
 import type { Post, Settings } from 'lib/sanity.queries'
 
 export default function IndexPage(props: {
@@ -15,7 +16,8 @@ export default function IndexPage(props: {
 }) {
   const { preview, loading, posts, settings } = props
   const [heroPost, ...morePosts] = posts || []
-  const { title = demo.title, description = demo.description } = settings || {}
+  const { title = myData.title, description = myData.description } =
+    settings || {}
 
   return (
     <>
@@ -34,7 +36,7 @@ export default function IndexPage(props: {
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
-        <IntroTemplate />
+        {/* <IntroTemplate /> */}
       </Layout>
     </>
   )

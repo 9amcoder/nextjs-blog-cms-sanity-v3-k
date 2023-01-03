@@ -19,6 +19,7 @@
     "@sanity/vision": "^3.1.2",
     "@vercel/og": "^0.0.21",
     "classnames": "^2.3.2",
+    "daisyui": "^2.46.1",
     "date-fns": "^2.29.3",
     "intl-segmenter-polyfill": "^0.4.4",
     "next": "^13.1.0",
