@@ -70,6 +70,18 @@ function Navbar(props: {
             <li>
               <a>{navButton2}</a>
             </li>
+            <li>
+              <a>{navButton3}</a>
+            </li>
+            <li>
+              <a>{navButton4}</a>
+            </li>
+            <li>
+              <a>{navButton5}</a>
+            </li>
+            <li>
+              <a>{navButton6}</a>
+            </li>
           </ul>
         </div>
         <a className="btn-ghost btn text-xl normal-case">{logo}</a>
@@ -104,11 +116,23 @@ function Navbar(props: {
           <li>
             <a>{navButton2}</a>
           </li>
+          <li>
+            <a>{navButton3}</a>
+          </li>
+          <li>
+            <a>{navButton4}</a>
+          </li>
+          <li>
+            <a>{navButton5}</a>
+          </li>
+          <li>
+            <a>{navButton6}</a>
+          </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      {/* <div className="navbar-end">
         <a className="btn">Get started</a>
-      </div>
+      </div> */}
     </div>
   )
 }
