@@ -1,0 +1,71 @@
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-from-left {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes moveFromLeftToRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.move-from-left-to-right {
+  animation: moveFromLeftToRight 10s linear infinite;
+}
+
+@keyframes paintBrush {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+
+.smallHero {
+  animation: paintBrush 2s linear infinite;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.1) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 0, 0, 0.1) 50%,
+    rgba(255, 0, 0, 0.1) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 50px 50px;
+}
+
+@keyframes colorDrops {
+  0% {
+    background-color: #9ae7ff;
+  }
+  25% {
+    background-color: #fad0c4;
+  }
+  50% {
+    background-color: #f0c27b;
+  }
+  75% {
+    background-color: #e8d5b9;
+  }
+  100% {
+    background-color: #dfff9a;
+  }
+}
+
+.color-drops {
+  animation: colorDrops 4s ease-in-out infinite;
+}

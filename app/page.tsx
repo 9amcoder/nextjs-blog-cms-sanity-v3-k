@@ -1,3 +1,4 @@
+'use client'
 import HomePage from 'components/IndexPage/HomePage'
 
 function page(props) {

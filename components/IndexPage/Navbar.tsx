@@ -1,4 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const AlertDiv = styled.div`
+  background: linear-gradient(
+    90deg,
+    rgba(248, 253, 29, 0.7455575980392157) 51%,
+    rgba(255, 255, 255, 0.36740633753501406) 52%
+  );
+`
 
 function Navbar(props: {
   logo?: string
@@ -130,9 +139,11 @@ function Navbar(props: {
           </li>
         </ul>
       </div>
-      {/* <div className="navbar-end">
-        <a className="btn">Get started</a>
-      </div> */}
+      <div className="navbar-end">
+        <AlertDiv className="btn-ghost btn text-xl normal-case">
+          GET QUOTE
+        </AlertDiv>
+      </div>
     </div>
   )
 }
